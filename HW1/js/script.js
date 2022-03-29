@@ -11,7 +11,7 @@ let digitsum = num >= 0 ? (num - num % 10) / 10 + num % 10 : ((0-num) - (0-num) 
 console.log("Сумма цифр числа", num , "равна", digitsum);
 //Задача 3
 console.log("Задача 3");
-let num1 = 10 , num2 = 15;
+let num1 = -10 , num2 = 15;
 console.log("было " , num1 , " и " , num2);
 /*
 num1 = num1 + num2 - num1;
