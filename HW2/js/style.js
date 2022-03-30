@@ -71,7 +71,7 @@ console.log("Задача 5")
 if (num > 25 && num < 200) console.log(`Число ${num} содержится в интервале (25, 200)`);
 else console.log(`Число ${num} не содержится в интервале (25, 200)`);
 
-//Задача 6 не работает
+//Задача 6 работает, но не красиво
 console.log("Задача 6")
 num = Math.floor(Math.random()*100+1);
 while (true){
@@ -82,9 +82,9 @@ while (true){
     }else if (answer === 'НЕТ'){
         answer = prompt(`Число больше ${num}?Варианты ответа: ДА НЕТ`);
         if (answer === "ДА"){
-            num = Math.floor(Math.random()*(num)+1);
+            num = Math.floor(Math.random()*(100-num)+num);
         }else if (answer === 'НЕТ'){
-            num = Math.floor(Math.random()*(100-num)+1);
+            num = Math.floor(Math.random()*(num)+1);
         }else alert("Некорректный ответ")
     }else alert("Некорректный ответ")
 }
