@@ -3,9 +3,9 @@
 console.log("Задача 1");
 let count = 75;
 if (count <= 100 && count >= 90) console.log("Оценка: отлично");
-else if (count <= 89 && count >= 60) console.log("Оценка: Хорошо");
-else if (count <= 59 && count >= 40) console.log("Оценка: Удовлетворительно");
-else if (count <= 39 && count >= 0) console.log("Попробуйте еще раз");
+else if (count >= 60) console.log("Оценка: Хорошо");
+else if (count >= 40) console.log("Оценка: Удовлетворительно");
+else if (count >= 0) console.log("Попробуйте еще раз");
 else console.log("Неправильный формат баллов");
 //Задача 2
 console.log("Задача 2");
@@ -65,7 +65,8 @@ while (true) {
     if (userNum === num) {
         alert("Вы угадали!");
         break;
-    } else if (userNum > num) alert("Ваше число больше загаданного");
+    }
+    if (userNum > num) alert("Ваше число больше загаданного");
     else alert("Ваше число меньше загаданного");
 }
 //Задача 5
@@ -84,7 +85,7 @@ while (true) {
     if (answer === "ДА") {
         alert("Игра окончена");
         break;
-    } else if (answer === 'НЕТ') {
+    } if (answer === 'НЕТ') {
         answer = prompt(`Число больше ${num}? Варианты ответа: ДА НЕТ`);
         if (answer === "ДА") {
             min = num + 1; /* Не включать минимальное значение в следующий поиск */
