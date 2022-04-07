@@ -4,7 +4,10 @@ console.log("Задача 1");
 
 function range(num1, num2, ran = 1) {
     let arr = [];
-    if (ran === 0) return ("Не правильнй диапазон")
+    if (ran === 0) {
+        console.log("Не правильнй диапазон");
+        return false;
+    }
     if (ran < 0) {
         if (num1 > num2) {
             for (let i = num1; i >= num2; i += ran) {
@@ -25,6 +28,7 @@ function range(num1, num2, ran = 1) {
         arr.push(i);
     }
     return arr;
+    wwwwwwwwwwwwwwwwww
 }
 
 let testArr = range(1, 10, 2), testArr2 = range(20, 5, 3);
